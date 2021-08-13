@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "next": "^9.5.6-canary.11",
+    "next": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
