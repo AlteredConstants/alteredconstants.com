@@ -1,28 +1,18 @@
-import React from "react";
-import createPage from "component/createPage";
-import MainSection from "component/MainSection";
+import { LinksFunction, MetaFunction } from "remix";
+import { MainSection } from "~/components/MainSection";
+import stylesUrl from "~/styles/resume.css";
 
-function Resume() {
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesUrl },
+];
+
+export const meta: MetaFunction = () => ({
+  title: "Résumé of Altered Constants",
+});
+
+export default function Resume() {
   return (
-    <article>
-      <style jsx>{`
-        h2 {
-          font-family: "Source Sans Pro", Arial, sans-serif;
-          text-transform: uppercase;
-          font-size: 1em;
-          font-style: normal;
-          margin-bottom: 0;
-          letter-spacing: 0.15em;
-        }
-        h3 {
-          font-family: "Source Sans Pro", Arial, sans-serif;
-          font-style: italic;
-          text-transform: uppercase;
-          font-size: 0.9em;
-          margin-top: 0;
-          letter-spacing: 0.15em;
-        }
-      `}</style>
+    <>
       <MainSection title="Employment History">
         <section id="emp-miramar">
           <header>
@@ -191,8 +181,6 @@ function Resume() {
           </ul>
         </section>
       </MainSection>
-    </article>
+    </>
   );
 }
-
-export default createPage(Resume, { title: "Résumé of" });

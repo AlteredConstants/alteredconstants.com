@@ -1,10 +1,8 @@
-import React from "react";
-import createPage from "component/createPage";
-import MainSection from "component/MainSection";
+import { MainSection } from "~/components/MainSection";
 
-function Index() {
+export default function Index() {
   return (
-    <article>
+    <>
       <MainSection title="The Basics">
         <p>
           My name's Zeff Svoboda.{" "}
@@ -27,8 +25,6 @@ function Index() {
           goes.
         </p>
       </MainSection>
-    </article>
+    </>
   );
 }
-
-export default createPage(Index);

@@ -1,10 +1,11 @@
-import React from "react";
-import createPage from "component/createPage";
-import MainSection from "component/MainSection";
+import { MetaFunction } from "remix";
+import { MainSection } from "~/components/MainSection";
 
-function About() {
+export const meta: MetaFunction = () => ({ title: "About Altered Constants" });
+
+export default function About() {
   return (
-    <article>
+    <>
       <MainSection title="About the Site">
         <p>
           This website is the personal website for Zeff Svoboda, his projects,
@@ -57,8 +58,6 @@ function About() {
           </li>
         </ol>
       </MainSection>
-    </article>
+    </>
   );
 }
-
-export default createPage(About, { title: "About" });

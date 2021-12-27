@@ -1,0 +1,13 @@
+figure.copyright-video iframe {
+  display: block;
+  margin: auto;
+  width: 42vw;
+  height: 23.625vw;
+  max-width: 560px;
+  max-height: 315px;
+}
+
+.copyright-video figcaption {
+  text-align: right;
+  font-size: 0.8em;
+}

@@ -1,0 +1,9 @@
+ul.contact-links {
+  width: 17em;
+  margin: auto;
+  padding: 0;
+}
+ul.contact-links li {
+  display: inline-block;
+  margin: auto 0.2em;
+}

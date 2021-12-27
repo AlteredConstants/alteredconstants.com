@@ -1,39 +1,32 @@
-import React from "react";
-import Link from "next/link";
-import createPage from "component/createPage";
-import MainSection from "component/MainSection";
+import { Link, LinksFunction, MetaFunction } from "remix";
+import { MainSection } from "~/components/MainSection";
+import stylesUrl from "~/styles/license.css";
 
-function License() {
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesUrl },
+];
+
+export const meta: MetaFunction = () => ({
+  title: "License Altered Constants",
+});
+
+export default function License() {
   return (
-    <article>
-      <style jsx>{`
-        figure iframe {
-          display: block;
-          margin: auto;
-          width: 42vw;
-          height: 23.625vw;
-          max-width: 560px;
-          max-height: 315px;
-        }
-
-        figcaption {
-          text-align: right;
-          font-size: 0.8em;
-        }
-      `}</style>
+    <>
       <MainSection title="Copyright">
         <p>
           Copyright is a tricky subject. While I fully support the original
           purpose of copyright law—to incentivize authors and inventors to
           create more to share—I am disappointed in what it has become.
         </p>
-        <figure>
+        <figure className="copyright-video">
           <iframe
             width="560"
             height="315"
             src="//www.youtube.com/embed/tk862BbjWx4"
             frameBorder="0"
             allowFullScreen
+            title="C.G.P Grey's video about the history of US copyright law."
           />
           <figcaption>
             by <a href="http://www.cgpgrey.com/">C.G.P. Grey</a>
@@ -88,8 +81,8 @@ function License() {
             would be appreciated.
           </li>
           <li>
-            <b>(Optional)</b> <Link href="/contact">Let me know</Link> what
-            you're doing (or planning to do) with it—I'd love to hear about your
+            <b>(Optional)</b> <Link to="/contact">Let me know</Link> what you're
+            doing (or planning to do) with it—I'd love to hear about your
             project.
           </li>
         </ol>
@@ -119,8 +112,6 @@ function License() {
           </small>
         </p>
       </footer>
-    </article>
+    </>
   );
 }
-
-export default createPage(License, { title: "License" });

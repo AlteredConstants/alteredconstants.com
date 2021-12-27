@@ -1,0 +1,164 @@
+#page {
+  min-height: 100%;
+  min-width: 200px;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#page > header,
+#page > nav {
+  flex: 1 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#page > nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page > nav li:first-child {
+  display: none;
+}
+
+#page > header h1,
+#page > nav li {
+  margin: 0 0 0.2rem 0;
+}
+
+#page > nav header {
+  display: none;
+}
+
+/* Main Section */
+
+section.main-section {
+  padding: 0 1rem;
+}
+.main-section header h1 {
+  font-size: 1.2rem;
+  border-bottom: 2px solid #df9739;
+  color: #df9739;
+  padding: 0 1rem;
+  margin: 1rem -1rem;
+}
+
+/* Footer */
+
+#page > footer {
+  flex: 1 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+#page > footer p {
+  margin: 0;
+}
+#page > footer img {
+  margin-top: 0.7em;
+}
+
+#page > footer a {
+  color: #404040;
+}
+#page > footer a:link,
+#page > footer a:visited {
+  color: #404040;
+  opacity: 0.4;
+}
+#page > footer a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+#page > footer #copyleft-icon {
+  transform: scaleX(-1);
+  display: inline-block;
+  font-family: arial;
+}
+
+/* Desktop Overrides */
+
+@media (min-width: 768px) {
+  #page > nav {
+    order: 3;
+    flex: 0;
+  }
+
+  /* Main Content */
+  #page > *:nth-last-child(2) {
+    order: 2;
+    flex: 1 0%;
+    margin-top: calc(-2.7rem + -4px);
+    padding-right: 2em;
+    padding-bottom: 2.2em;
+  }
+
+  /* Footer */
+  #page > *:last-child {
+    order: 4;
+  }
+
+  #page > header h1,
+  #page > nav li {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+/* NavLink */
+
+a.nav-link {
+  box-sizing: content-box;
+  display: block;
+  width: 9em;
+  padding-left: 1em;
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  border: 2px solid transparent;
+  border-radius: 0 5em 0 0;
+}
+a.nav-link:hover {
+  text-decoration: none;
+}
+
+a.nav-link:not(.primary) {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+a.nav-link:hover:not(.primary) {
+  background-color: #fff;
+  color: #548bd2;
+}
+
+a.nav-link.current {
+  border: 2px solid #fff;
+}
+
+a.nav-link.primary {
+  width: 9em;
+  height: 3.2em;
+  padding-top: 2em;
+  background-color: #df9739;
+  color: #dfd7b7;
+  font-weight: bold;
+  border-bottom-color: #df9739;
+}
+
+a.nav-link:hover.primary {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  a.nav-link:not(.primary) {
+    width: 9em;
+    height: 3.2em;
+    padding-top: 2em;
+  }
+}
