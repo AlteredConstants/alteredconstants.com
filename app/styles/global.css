@@ -6,48 +6,48 @@
 */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 a img {
-  border: 0;
+	border: 0;
 }
 
 html {
-  min-height: 100%;
+	min-height: 100%;
 }
 body {
-  min-height: 100%;
-  margin: 0;
-  padding: 2rem;
-  color: #000;
-  font-family: "Enriqueta", Arial, sans-serif;
-  font-size: 11pt;
-  line-height: 1.4em;
-  background-color: #e4e4d1;
-  background-image: linear-gradient(
-    to bottom,
-    #cfc9c1,
-    #dad7c9 40em,
-    #e4e4d1 120em
-  );
+	min-height: 100%;
+	margin: 0;
+	padding: 2rem;
+	color: #000;
+	font-family: "Enriqueta", Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 1.4em;
+	background-color: #e4e4d1;
+	background-image: linear-gradient(
+		to bottom,
+		#cfc9c1,
+		#dad7c9 40em,
+		#e4e4d1 120em
+	);
 }
 
 a:link {
-  color: #548bd2;
-  text-decoration: none;
+	color: #548bd2;
+	text-decoration: none;
 }
 
 a:visited {
-  color: #76aaf4;
+	color: #76aaf4;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .header-font {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
 }

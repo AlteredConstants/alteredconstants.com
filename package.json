@@ -1,48 +1,48 @@
 {
-  "name": "alteredconstants-website",
-  "author": "Zeff Svoboda",
-  "license": "ISC",
-  "repository": "AlteredConstants/alteredconstants.com",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
-    "lint": "eslint app",
-    "format": "prettier --ignore-path .gitignore --write ."
-  },
-  "dependencies": {
-    "@react-router/node": "^7.7.1",
-    "@react-router/serve": "^7.7.1",
-    "classnames": "^2.5.1",
-    "isbot": "^5.1.27",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router": "^7.7.1"
-  },
-  "devDependencies": {
-    "@react-router/dev": "^7.7.1",
-    "@types/node": "^22",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "eslint": "^8.5.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "3.6.2",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.3",
-    "vite-tsconfig-paths": "^5.1.4"
-  },
-  "engines": {
-    "node": ">=22"
-  },
-  "sideEffects": false
+	"name": "alteredconstants-website",
+	"author": "Zeff Svoboda",
+	"license": "ISC",
+	"repository": "AlteredConstants/alteredconstants.com",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "react-router build",
+		"dev": "react-router dev",
+		"start": "react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tsc",
+		"lint": "eslint app",
+		"format": "prettier --ignore-path .gitignore --write ."
+	},
+	"dependencies": {
+		"@react-router/node": "^7.7.1",
+		"@react-router/serve": "^7.7.1",
+		"classnames": "^2.5.1",
+		"isbot": "^5.1.27",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-router": "^7.7.1"
+	},
+	"devDependencies": {
+		"@react-router/dev": "^7.7.1",
+		"@types/node": "^22",
+		"@types/react": "^19.1.2",
+		"@types/react-dom": "^19.1.2",
+		"@typescript-eslint/eslint-plugin": "^5.8.0",
+		"@typescript-eslint/parser": "^5.8.0",
+		"eslint": "^8.5.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.5.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.28.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"prettier": "3.6.2",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.3",
+		"vite-tsconfig-paths": "^5.1.4"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"sideEffects": false
 }
