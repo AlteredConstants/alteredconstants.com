@@ -9,11 +9,23 @@ export default function Contact() {
 
       <MainSection title="Contact">
         <p>
-        The best place to contact me is probably Twitter{" "}
-        <a href="https://twitter.com/AltConsts">@AltConsts</a>.
+          The best place to contact me is probably Bluesky{" "}
+          <a href="https://bsky.app/profile/alteredconstants.com">
+            @alteredconstants.com
+          </a>
+          .
         </p>
         <p>Other options include:</p>
         <ul className="contact-links">
+          <li>
+            <a href="https://bsky.app/profile/alteredconstants.com">
+              <img
+                src="/static/img/social-icons/bluesky.png"
+                alt="Twitter"
+                title="Twitter"
+              />
+            </a>
+          </li>
           <li>
             <a href="https://twitter.com/AltConsts">
               <img
