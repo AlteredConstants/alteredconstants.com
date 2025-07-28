@@ -1,18 +1,13 @@
-import { Link, LinksFunction, MetaFunction } from "remix";
+import "~/styles/license.css";
+
+import { Link } from "react-router";
 import { MainSection } from "~/components/MainSection";
-import stylesUrl from "~/styles/license.css";
-
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesUrl },
-];
-
-export const meta: MetaFunction = () => ({
-  title: "License Altered Constants",
-});
 
 export default function License() {
   return (
     <>
+      <title>License Altered Constants</title>
+
       <MainSection title="Copyright">
         <p>
           Copyright is a tricky subject. While I fully support the original

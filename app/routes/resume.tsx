@@ -1,18 +1,12 @@
-import { LinksFunction, MetaFunction } from "remix";
+import "~/styles/resume.css";
+
 import { MainSection } from "~/components/MainSection";
-import stylesUrl from "~/styles/resume.css";
-
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesUrl },
-];
-
-export const meta: MetaFunction = () => ({
-  title: "Résumé of Altered Constants",
-});
 
 export default function Resume() {
   return (
     <>
+      <title>Résumé of Altered Constants</title>
+
       <MainSection title="Employment History">
         <section id="emp-miramar">
           <header>

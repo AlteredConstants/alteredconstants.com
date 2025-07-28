@@ -1,11 +1,10 @@
-import { MetaFunction } from "remix";
 import { MainSection } from "~/components/MainSection";
-
-export const meta: MetaFunction = () => ({ title: "About Altered Constants" });
 
 export default function About() {
   return (
     <>
+      <title>About Altered Constants</title>
+
       <MainSection title="About the Site">
         <p>
           This website is the personal website for Zeff Svoboda, his projects,
