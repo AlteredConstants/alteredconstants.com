@@ -1,36 +1,24 @@
 import { defineConfig } from "eslint/config";
-import { fixupConfigRules, fixupPluginRules } from "@eslint/compat";
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
-import tsParser from "@typescript-eslint/parser";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
-});
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import javascript from "@eslint/js";
+import typescript from "typescript-eslint";
+import importPlugin from "eslint-plugin-import";
+import jsxA11y from "eslint-plugin-jsx-a11y";
+import prettierConfig from "eslint-config-prettier/flat";
 
 export default defineConfig([
+	javascript.configs.recommended,
+	typescript.configs.recommendedTypeChecked,
+	react.configs.flat.recommended,
+	react.configs.flat["jsx-runtime"],
+	reactHooks.configs.flat["recommended-latest"],
+	importPlugin.flatConfigs.recommended,
+	importPlugin.flatConfigs.typescript,
+	jsxA11y.flatConfigs.strict,
+	prettierConfig,
 	{
-		extends: fixupConfigRules(
-			compat.extends(
-				"eslint:recommended",
-				"plugin:react/recommended",
-				"plugin:react/jsx-runtime",
-				"plugin:@typescript-eslint/recommended",
-				"plugin:import/recommended",
-				"plugin:import/typescript",
-				"plugin:jsx-a11y/strict",
-				"prettier",
-			),
-		),
-		plugins: { "@typescript-eslint": fixupPluginRules(typescriptEslint) },
-		languageOptions: { parser: tsParser },
+		languageOptions: { parserOptions: { projectService: true } },
 		settings: { "import/resolver": "typescript", react: { version: "detect" } },
 		rules: {
 			"react/no-unescaped-entities": "off",
