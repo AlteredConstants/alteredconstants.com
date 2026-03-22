@@ -1,5 +1,4 @@
 import "~/styles/license.css";
-
 import { Link } from "react-router";
 import { MainSection } from "~/components/MainSection";
 

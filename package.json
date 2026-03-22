@@ -9,18 +9,19 @@
 		"build": "react-router build",
 		"dev": "react-router dev",
 		"start": "react-router-serve ./build/server/index.js",
-		"typecheck": "react-router typegen && tsc",
-		"lint": "eslint --max-warnings=0 app",
+		"lint": "npm run check:eslint",
 		"format": "npm run check:prettier -- --write",
+		"check:types": "react-router typegen && tsc",
+		"check:eslint": "eslint --max-warnings=0 app",
 		"check:prettier": "prettier --check .",
-		"check": "npm run typecheck && npm run lint && npm run check:prettier"
+		"check": "npm run check:types && npm run check:eslint && npm run check:prettier"
 	},
 	"dependencies": {
 		"@react-router/dev": "^7.13.1",
 		"@react-router/node": "^7.13.1",
 		"@react-router/serve": "^7.13.1",
 		"classnames": "^2.5.1",
-		"isbot": "^5.1.35",
+		"isbot": "^5.1.36",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
 		"react-router": "^7.13.1",
@@ -29,19 +30,20 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.2",
-		"@types/node": "^22.19.13",
+		"@trivago/prettier-plugin-sort-imports": "6.0.2",
+		"@types/node": "^22.19.15",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-import-resolver-typescript": "^4.4.4",
-		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-import-x": "^4.16.2",
 		"eslint-plugin-jsx-a11y": "^6.10.2",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.1",
 		"prettier": "3.8.1",
 		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.56.1"
+		"typescript-eslint": "^8.57.1"
 	},
 	"engines": {
 		"node": "^22.18"

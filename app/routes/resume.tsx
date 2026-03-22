@@ -1,5 +1,4 @@
 import "~/styles/resume.css";
-
 import { MainSection } from "~/components/MainSection";
 
 export default function Resume() {

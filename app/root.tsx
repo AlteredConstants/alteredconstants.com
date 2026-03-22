@@ -1,16 +1,15 @@
 import "~/styles/global.css";
 import "~/styles/root.css";
-
 import classnames from "classnames";
 import type { ReactNode } from "react";
 import {
+	isRouteErrorResponse,
 	Link,
 	Links,
 	Meta,
 	Outlet,
 	Scripts,
 	ScrollRestoration,
-	isRouteErrorResponse,
 	useLocation,
 } from "react-router";
 import type { Route } from "./+types/root";

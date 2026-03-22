@@ -1,5 +1,4 @@
 import "~/styles/contact.css";
-
 import { MainSection } from "~/components/MainSection";
 
 export default function Contact() {
