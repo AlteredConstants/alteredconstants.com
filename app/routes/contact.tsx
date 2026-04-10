@@ -20,8 +20,8 @@ export default function Contact() {
 						<a href="https://bsky.app/profile/alteredconstants.com">
 							<img
 								src="/static/img/social-icons/bluesky.png"
-								alt="Twitter"
-								title="Twitter"
+								alt="Bluesky"
+								title="Bluesky"
 							/>
 						</a>
 					</li>
