@@ -3,6 +3,7 @@ import "~/styles/root.css";
 import classnames from "classnames";
 import type { ReactNode } from "react";
 import {
+	href,
 	isRouteErrorResponse,
 	Link,
 	Links,
@@ -29,10 +30,10 @@ export const links: Route.LinksFunction = () => [
 ];
 
 const navLinks = [
-	{ route: "/", text: "Home" },
-	{ route: "/about", text: "About" },
-	{ route: "/resume", text: "Résumé" },
-	{ route: "/contact", text: "Contact" },
+	{ route: href("/"), text: "Home" },
+	{ route: href("/about"), text: "About" },
+	{ route: href("/resume"), text: "Résumé" },
+	{ route: href("/contact"), text: "Contact" },
 ];
 
 export default function App() {
@@ -54,7 +55,7 @@ export function Layout({ children }: { children: ReactNode }) {
 				<div id="page">
 					<header>
 						<h1>
-							<NavLink href="/" isPrimary>
+							<NavLink href={href("/")} isPrimary>
 								Altered Constants
 							</NavLink>
 						</h1>
@@ -113,7 +114,7 @@ function NavLink({
 function Footer() {
 	return (
 		<footer>
-			<Link to="/license">
+			<Link to={href("/license")}>
 				<section id="page-info">
 					<p id="copyright">
 						All content <span id="copyleft-icon">&copy;</span> Zeff Svoboda

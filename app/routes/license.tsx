@@ -1,5 +1,5 @@
 import "~/styles/license.css";
-import { Link } from "react-router";
+import { href, Link } from "react-router";
 import { MainSection } from "~/components/MainSection";
 
 export default function License() {
@@ -75,9 +75,9 @@ export default function License() {
 						would be appreciated.
 					</li>
 					<li>
-						<b>(Optional)</b> <Link to="/contact">Let me know</Link> what you're
-						doing (or planning to do) with it—I'd love to hear about your
-						project.
+						<b>(Optional)</b> <Link to={href("/contact")}>Let me know</Link>{" "}
+						what you're doing (or planning to do) with it—I'd love to hear about
+						your project.
 					</li>
 				</ol>
 			</MainSection>
