@@ -6,7 +6,7 @@
 	"objectWrap": "collapse",
 	"useTabs": true,
 
-	"importOrder": ["^[.~/]"],
+	"importOrder": ["^~", "^\\."],
 	"importOrderCaseInsensitive": true,
 	"importOrderSideEffects": false,
 	"importOrderSortSpecifiers": true

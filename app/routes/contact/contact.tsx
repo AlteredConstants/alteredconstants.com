@@ -1,5 +1,11 @@
 import "~/styles/contact.css";
 import { MainSection } from "~/components/MainSection";
+import blueskyIcon from "./bluesky.svg";
+import facebookIcon from "./facebook.png";
+import linkedinIcon from "./linkedin.png";
+import twitterIcon from "./twitter.png";
+import vimeoIcon from "./vimeo.png";
+import youtubeIcon from "./youtube.png";
 
 export default function Contact() {
 	return (
@@ -19,7 +25,9 @@ export default function Contact() {
 					<li>
 						<a href="https://bsky.app/profile/alteredconstants.com">
 							<img
-								src="/static/img/social-icons/bluesky.png"
+								src={blueskyIcon}
+								width={32}
+								height={32}
 								alt="Bluesky"
 								title="Bluesky"
 							/>
@@ -28,7 +36,9 @@ export default function Contact() {
 					<li>
 						<a href="https://twitter.com/AltConsts">
 							<img
-								src="/static/img/social-icons/twitter.png"
+								src={twitterIcon}
+								width={32}
+								height={32}
 								alt="Twitter"
 								title="Twitter"
 							/>
@@ -37,7 +47,9 @@ export default function Contact() {
 					<li>
 						<a href="https://www.facebook.com/zeff.svoboda">
 							<img
-								src="/static/img/social-icons/facebook.png"
+								src={facebookIcon}
+								width={32}
+								height={32}
 								alt="Facebook"
 								title="Facebook"
 							/>
@@ -46,7 +58,9 @@ export default function Contact() {
 					<li>
 						<a href="http://www.linkedin.com/pub/zeff-svoboda/b/316/297">
 							<img
-								src="/static/img/social-icons/linkedin.png"
+								src={linkedinIcon}
+								width={32}
+								height={32}
 								alt="LinkedIn"
 								title="LinkedIn"
 							/>
@@ -55,7 +69,9 @@ export default function Contact() {
 					<li>
 						<a href="https://www.youtube.com/user/AlteredConstants">
 							<img
-								src="/static/img/social-icons/youtube.png"
+								src={youtubeIcon}
+								width={32}
+								height={32}
 								alt="YouTube"
 								title="YouTube"
 							/>
@@ -64,7 +80,9 @@ export default function Contact() {
 					<li>
 						<a href="http://vimeo.com/alteredconstants">
 							<img
-								src="/static/img/social-icons/vimeo.png"
+								src={vimeoIcon}
+								width={32}
+								height={32}
 								alt="Vimeo"
 								title="Vimeo"
 							/>

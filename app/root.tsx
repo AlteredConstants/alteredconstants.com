@@ -13,8 +13,9 @@ import {
 	ScrollRestoration,
 	useLocation,
 } from "react-router";
-import type { Route } from "./+types/root";
 import { MainSection } from "~/components/MainSection";
+import type { Route } from "./+types/root";
+import swordIcon from "./sword.png";
 
 export const links: Route.LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -121,10 +122,7 @@ function Footer() {
 						unless otherwise noted.
 					</p>
 					<p id="license-message">But it's dangerous to go alone! Take this.</p>
-					<img
-						src="/static/img/sword.png"
-						alt="Creative Commons Attribution-Sharealike Unported 3.0 License"
-					/>
+					<img src={swordIcon} alt="sword" />
 				</section>
 			</Link>
 		</footer>
